@@ -1,0 +1,18 @@
+
+<div>First name: <span id="q0"></span></div>
+<div>Last Namr:<span id="q1"></span></div>
+<img id="myFile"/>
+
+
+<script>
+  
+ const firstname = localStorage.getItem('q0');
+ const surname = localStorage.getItem('q1');
+
+ document.getElementById('q0').textContent = firstname;
+ document.getElementById('q1').textContent = surname;
+
+ const img = document.getElementById('myFile');
+ img.src = localStorage.getItem('myFile');
+ 
+</script>
